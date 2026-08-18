@@ -1,0 +1,3 @@
+{
+  "/api/tmdb/list/route": "app/api/tmdb/list/route.js"
+}

@@ -1,0 +1,3 @@
+{
+  "/api/tmdb/search/suggestions/route": "app/api/tmdb/search/suggestions/route.js"
+}

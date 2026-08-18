@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Tv, Film, Bookmark, Activity, Compass } from 'lucide-react';
+import { Home, Tv, Film, Bookmark, Activity, Compass, FolderKanban, ShieldCheck } from 'lucide-react';
 
 export default function Footer() {
   const pathname = usePathname();
@@ -10,9 +10,11 @@ export default function Footer() {
   const tabs = [
     { href: '/', label: 'Home', icon: Home, testId: 'link-home' },
     { href: '/explore', label: 'Explore', icon: Compass, testId: 'link-explore' },
+    { href: '/categories', label: 'Categories', icon: FolderKanban, testId: 'link-categories' },
     { href: '/tv', label: 'TV Shows', icon: Tv, testId: 'link-tv' },
     { href: '/movies', label: 'Movies', icon: Film, testId: 'link-movies' },
     { href: '/my-list', label: 'My List', icon: Bookmark, testId: 'link-my-list' },
+    { href: '/admin', label: 'Admin', icon: ShieldCheck, testId: 'link-admin' },
     { href: '/status', label: 'Status', icon: Activity, testId: 'link-status' },
   ];
 

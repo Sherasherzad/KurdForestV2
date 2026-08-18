@@ -1,0 +1,195 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/auth/[...nextauth]",
+      "regex": "^/api/auth/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnextauth": "nxtPnextauth"
+      },
+      "namedRegex": "^/api/auth/(?<nxtPnextauth>.+?)(?:/)?$"
+    },
+    {
+      "page": "/movie/[id]",
+      "regex": "^/movie/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/movie/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/tv/[id]",
+      "regex": "^/tv/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/tv/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/movie/[id]",
+      "regex": "^/watch/movie/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/watch/movie/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/tv/[id]/[season]/[episode]",
+      "regex": "^/watch/tv/([^/]+?)/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid",
+        "nxtPseason": "nxtPseason",
+        "nxtPepisode": "nxtPepisode"
+      },
+      "namedRegex": "^/watch/tv/(?<nxtPid>[^/]+?)/(?<nxtPseason>[^/]+?)/(?<nxtPepisode>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/details",
+      "regex": "^/api/tmdb/details(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/details(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/discover",
+      "regex": "^/api/tmdb/discover(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/discover(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/list",
+      "regex": "^/api/tmdb/list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/list(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/search",
+      "regex": "^/api/tmdb/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/search(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/search/suggestions",
+      "regex": "^/api/tmdb/search/suggestions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/search/suggestions(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/season",
+      "regex": "^/api/tmdb/season(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/season(?:/)?$"
+    },
+    {
+      "page": "/api/tmdb/trending",
+      "regex": "^/api/tmdb/trending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/tmdb/trending(?:/)?$"
+    },
+    {
+      "page": "/api/watchlist/sync",
+      "regex": "^/api/watchlist/sync(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/watchlist/sync(?:/)?$"
+    },
+    {
+      "page": "/explore",
+      "regex": "^/explore(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/explore(?:/)?$"
+    },
+    {
+      "page": "/movies",
+      "regex": "^/movies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/movies(?:/)?$"
+    },
+    {
+      "page": "/my-list",
+      "regex": "^/my\\-list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/my\\-list(?:/)?$"
+    },
+    {
+      "page": "/search",
+      "regex": "^/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/search(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/status",
+      "regex": "^/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/status(?:/)?$"
+    },
+    {
+      "page": "/tv",
+      "regex": "^/tv(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tv(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

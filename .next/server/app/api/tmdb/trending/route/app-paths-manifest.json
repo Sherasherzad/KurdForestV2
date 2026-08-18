@@ -1,0 +1,3 @@
+{
+  "/api/tmdb/trending/route": "app/api/tmdb/trending/route.js"
+}
